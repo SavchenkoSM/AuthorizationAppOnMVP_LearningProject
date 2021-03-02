@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AutorizationAppOnMVP</string>
+    <string name="authorization_form">Authorization Form</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">log in</string>
+    <string name="enter_login_and_password">Please, enter your email and password below</string>
+    <string name="welcome">Welcome to App</string>
+    <string name="register">register</string>
+</resources>
