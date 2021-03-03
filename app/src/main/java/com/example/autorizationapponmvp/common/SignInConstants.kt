@@ -11,7 +11,7 @@ object SignInConstants {
     const val SIGN_IN_SUCCESS_CODE = -1
 
     // Комбинация email и password для входа
-    // (используются при проверки существует ли пользователь)
+    // (используется при проверке зарегистрирован пользователь или нет)
     const val USER_EMAIL = "admin@mail.ru"
     const val USER_PASSWORD = "admin1234"
 

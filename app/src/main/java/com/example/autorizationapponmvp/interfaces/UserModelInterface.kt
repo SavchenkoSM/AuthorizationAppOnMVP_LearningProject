@@ -10,7 +10,7 @@ interface UserModelInterface {
     fun isDataValid(): Int
 
     /**
-     * Метод проверки, существует пользователь или нет
+     * Метод проверки, зарегистрирован пользователь или нет
      */
     fun isUserExist(): Int
 }
