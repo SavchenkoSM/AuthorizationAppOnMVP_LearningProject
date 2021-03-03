@@ -1,6 +1,6 @@
 package com.example.autorizationapponmvp.model
 
-interface UserInterface {
+interface UserModelInterface {
     val email: String
     val password: String
 
