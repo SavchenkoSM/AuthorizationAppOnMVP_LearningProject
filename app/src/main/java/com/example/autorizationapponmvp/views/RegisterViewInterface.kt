@@ -1,4 +1,4 @@
-package com.example.autorizationapponmvp.view
+package com.example.autorizationapponmvp.views
 
 interface RegisterViewInterface {
     fun onDataValidSuccess(message: String)

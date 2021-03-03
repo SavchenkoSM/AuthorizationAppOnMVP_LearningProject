@@ -1,4 +1,4 @@
-package com.example.autorizationapponmvp.view
+package com.example.autorizationapponmvp.views
 
 interface SignInViewInterface {
     fun onSignInSuccess(message: String)

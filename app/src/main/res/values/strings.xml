@@ -3,7 +3,7 @@
     <string name="authorization_form">Authorization/Register Form</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="login">log in</string>
+    <string name="signIn">sign in</string>
     <string name="enter_login_and_password">Please, enter your email and password below</string>
     <string name="welcome">Welcome to App</string>
     <string name="register">register</string>

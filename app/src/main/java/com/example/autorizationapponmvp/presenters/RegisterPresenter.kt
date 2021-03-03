@@ -1,10 +1,9 @@
 package com.example.autorizationapponmvp.presenters
 
 import com.example.autorizationapponmvp.common.RegisterConstants
-import com.example.autorizationapponmvp.common.SignInConstants
 import com.example.autorizationapponmvp.interfaces.RegisterPresenterInterface
-import com.example.autorizationapponmvp.model.UserModel
-import com.example.autorizationapponmvp.view.RegisterViewInterface
+import com.example.autorizationapponmvp.models.UserModel
+import com.example.autorizationapponmvp.views.RegisterViewInterface
 
 class RegisterPresenter(private var registerViewInterface: RegisterViewInterface) :
     RegisterPresenterInterface {

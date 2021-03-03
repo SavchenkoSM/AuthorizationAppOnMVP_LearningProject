@@ -1,11 +1,13 @@
-package com.example.autorizationapponmvp.model
+package com.example.autorizationapponmvp.models
 
 import android.text.TextUtils
 import android.util.Patterns
 import com.example.autorizationapponmvp.common.RegisterConstants
 import com.example.autorizationapponmvp.common.SignInConstants
+import com.example.autorizationapponmvp.interfaces.UserModelInterface
 
-class UserModel(override val email: String, override val password: String) : UserModelInterface {
+class UserModel(override val email: String, override val password: String) :
+    UserModelInterface {
 
     override fun isDataValid(): Int {
         return when {
@@ -22,8 +24,8 @@ class UserModel(override val email: String, override val password: String) : Use
 
     override fun isUserExist(): Int {
         return if (email == SignInConstants.USER_EMAIL && password == SignInConstants.USER_PASSWORD)
-            SignInConstants.LOGIN_SUCCESS_CODE
+            SignInConstants.SIGN_IN_SUCCESS_CODE
         else
-            SignInConstants.USER_IS_NOT_EXIST_LOGIN_ERROR_CODE
+            SignInConstants.USER_IS_NOT_EXIST_SIGN_IN_ERROR_CODE
     }
 }

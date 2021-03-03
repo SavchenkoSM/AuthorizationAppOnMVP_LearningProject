@@ -9,8 +9,8 @@ import com.example.autorizationapponmvp.presenters.RegisterPresenter
 import com.example.autorizationapponmvp.interfaces.RegisterPresenterInterface
 import com.example.autorizationapponmvp.presenters.SignInPresenter
 import com.example.autorizationapponmvp.interfaces.SignInPresenterInterface
-import com.example.autorizationapponmvp.view.RegisterViewInterface
-import com.example.autorizationapponmvp.view.SignInViewInterface
+import com.example.autorizationapponmvp.views.RegisterViewInterface
+import com.example.autorizationapponmvp.views.SignInViewInterface
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), SignInViewInterface, RegisterViewInterface {

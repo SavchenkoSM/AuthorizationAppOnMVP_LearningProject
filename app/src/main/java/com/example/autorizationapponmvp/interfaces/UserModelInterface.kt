@@ -1,4 +1,4 @@
-package com.example.autorizationapponmvp.model
+package com.example.autorizationapponmvp.interfaces
 
 interface UserModelInterface {
     val email: String
