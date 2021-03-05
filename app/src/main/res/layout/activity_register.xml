@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".activities.SignInActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/register_form"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/enter_information_request"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    <EditText
+        android:id="@+id/repeatedPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/repeat_password"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        android:textAllCaps="true" />
+</LinearLayout>

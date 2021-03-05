@@ -1,6 +1,6 @@
 package com.example.autorizationapponmvp.views
 
 interface RegisterViewInterface {
-    fun onDataValidSuccess(message: String)
-    fun onDataValidError(message: String)
+    fun onRegisterSuccess(message: String)
+    fun onRegisterError(message: String)
 }

@@ -1,6 +1,6 @@
 package com.example.autorizationapponmvp.presenters
 
-import com.example.autorizationapponmvp.common.SignInConstants
+import com.example.autorizationapponmvp.constants.SignInConstants
 import com.example.autorizationapponmvp.interfaces.SignInPresenterInterface
 import com.example.autorizationapponmvp.models.UserModel
 import com.example.autorizationapponmvp.views.SignInViewInterface

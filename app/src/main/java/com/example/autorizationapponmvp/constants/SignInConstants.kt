@@ -1,7 +1,7 @@
-package com.example.autorizationapponmvp.common
+package com.example.autorizationapponmvp.constants
 
 /**
- * Объект, содержащий константы, используемые в проекте
+ * Объект, содержащий константы, используемые для реализации Авторизации
  */
 object SignInConstants {
     // Код ошибки при авторизации

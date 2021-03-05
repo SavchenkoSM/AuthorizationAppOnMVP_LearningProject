@@ -2,8 +2,8 @@ package com.example.autorizationapponmvp.models
 
 import android.text.TextUtils
 import android.util.Patterns
-import com.example.autorizationapponmvp.common.RegisterConstants
-import com.example.autorizationapponmvp.common.SignInConstants
+import com.example.autorizationapponmvp.constants.RegisterConstants
+import com.example.autorizationapponmvp.constants.SignInConstants
 import com.example.autorizationapponmvp.interfaces.UserModelInterface
 
 class UserModel(override val email: String, override val password: String) :
@@ -18,7 +18,7 @@ class UserModel(override val email: String, override val password: String) :
             password.length < RegisterConstants.MIN_PASSWORD_LENGTH ->
                 RegisterConstants.SHORT_PASSWORD_LENGTH_ERROR_CODE
             else ->
-                RegisterConstants.REGISTER_SUCCESS_CODE
+                RegisterConstants.DATA_VALID_SUCCESS_CODE
         }
     }
 
