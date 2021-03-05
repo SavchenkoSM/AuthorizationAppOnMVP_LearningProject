@@ -17,10 +17,6 @@
         android:textColor="@color/purple_700"
         android:textSize="24sp" />
 
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="5dp"/>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,20 +25,12 @@
         android:textColor="@color/purple_500"
         android:textSize="16sp" />
 
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
-
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/email"
         android:inputType="textEmailAddress" />
-
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="5dp"/>
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -51,10 +39,6 @@
         android:hint="@string/password"
         android:inputType="textPassword" />
 
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
-
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
@@ -62,29 +46,31 @@
         android:text="@string/signIn"
         android:textAllCaps="true" />
 
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/or"
-        android:textColor="@color/purple_500"
-        android:textSize="16sp" />
+        android:gravity="end"
+        android:orientation="horizontal">
 
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/goToRegisterActivityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:text="@string/create_account"
-        android:textColor="@color/purple_500" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
 
+        <Button
+            android:id="@+id/goToRegisterActivityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/create_account"
+            android:textColor="@color/purple_500" />
+    </LinearLayout>
 </LinearLayout>

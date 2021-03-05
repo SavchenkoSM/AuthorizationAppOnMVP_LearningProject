@@ -19,7 +19,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="10dp" />
+        android:layout_height="5dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="15dp" />
+        android:layout_height="20dp"/>
 
     <EditText
         android:id="@+id/emailEditText"
@@ -42,7 +42,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="5dp" />
+        android:layout_height="5dp"/>
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -53,7 +53,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="5dp" />
+        android:layout_height="5dp"/>
 
     <EditText
         android:id="@+id/repeatedPasswordEditText"
@@ -64,7 +64,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="15dp" />
+        android:layout_height="20dp"/>
 
     <Button
         android:id="@+id/registerButton"

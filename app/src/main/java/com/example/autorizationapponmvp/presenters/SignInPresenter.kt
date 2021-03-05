@@ -4,8 +4,12 @@ import com.example.autorizationapponmvp.constants.SignInConstants
 import com.example.autorizationapponmvp.interfaces.SignInPresenterInterface
 import com.example.autorizationapponmvp.models.UserModel
 import com.example.autorizationapponmvp.views.SignInViewInterface
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
-class SignInPresenter(private var signInViewInterface: SignInViewInterface) :
+// @InjectViewState – аннотация для привязывания ViewState к Presenter
+@InjectViewState
+class SignInPresenter : MvpPresenter<SignInViewInterface>(),
     SignInPresenterInterface {
 
     override fun onSignIn(email: String, password: String) {
@@ -13,8 +17,8 @@ class SignInPresenter(private var signInViewInterface: SignInViewInterface) :
         val signInCode = user.isUserExist()
 
         if (signInCode == SignInConstants.SIGN_IN_SUCCESS_CODE)
-            signInViewInterface.onSignInSuccess(SignInConstants.SIGN_IN_SUCCESS_MESSAGE)
+            viewState.onSignInSuccess(SignInConstants.SIGN_IN_SUCCESS_MESSAGE)
         else
-            signInViewInterface.onSignInError(SignInConstants.SIGN_IN_ERROR_MESSAGE)
+            viewState.onSignInError(SignInConstants.SIGN_IN_ERROR_MESSAGE)
     }
 }
